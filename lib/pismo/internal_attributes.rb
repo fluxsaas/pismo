@@ -33,7 +33,7 @@ module Pismo
     ]
 
     
-    = [
+    FAVICON_MATCHES = [
       ['link[@rel="fluid-icon"]', lambda { |el| el.attr('href') }],      # Get a Fluid icon if possible..
       ['link[@rel="shortcut icon"]', lambda { |el| el.attr('href') }],
       ['link[@rel="Shortcut Icon"]', lambda { |el| el.attr('href') }],
