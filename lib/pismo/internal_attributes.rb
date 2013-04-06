@@ -32,9 +32,11 @@ module Pismo
       ['link[@type="application/atom+xml"]', lambda { |el| el.attr('href') }]
     ]
 
-    FAVICON_MATCHES = [
+    
+    = [
       ['link[@rel="fluid-icon"]', lambda { |el| el.attr('href') }],      # Get a Fluid icon if possible..
       ['link[@rel="shortcut icon"]', lambda { |el| el.attr('href') }],
+      ['link[@rel="Shortcut Icon"]', lambda { |el| el.attr('href') }],
       ['link[@rel="icon"]', lambda { |el| el.attr('href') }]
     ]
 
